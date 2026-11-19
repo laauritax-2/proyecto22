@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #3d5145;
+    background-color: #edf2ed;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 650px;
+    margin: 35px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #52745e;
+}
+
+.descripcion {
+    color: #78877d;
+    margin-bottom: 25px;
+}
+
+.tarjeta {
+    background-color: #ffffff;
+    border: 1px solid #dce6dd;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 18px 0;
+}
+
+.tarjeta h2 {
+    color: #496b56;
+}
+
+button {
+    padding: 11px 16px;
+    border: none;
+    border-radius: 7px;
+    background-color: #789783;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #617f6b;
+}
+
+button:focus-visible {
+    outline: 3px solid #b5cdb9;
+    outline-offset: 3px;
+}
+
+#numero-pregunta {
+    color: #819187;
+    font-size: 14px;
+}
+
+.opciones {
+    display: grid;
+    gap: 10px;
+    margin: 22px 0;
+}
+
+.opcion {
+    width: 100%;
+    background-color: #e8efe9;
+    color: #405849;
+    border: 1px solid #d6e2d8;
+    text-align: left;
+}
+
+.opcion:hover:not(:disabled) {
+    background-color: #dce9df;
+}
+
+.opcion:disabled {
+    cursor: default;
+    opacity: 1;
+}
+
+.opcion.correcta {
+    background-color: #78a786;
+    color: white;
+    border-color: #78a786;
+}
+
+.opcion.incorrecta {
+    background-color: #cf8585;
+    color: white;
+    border-color: #cf8585;
+}
+
+#retroalimentacion {
+    min-height: 22px;
+    font-weight: bold;
+}
+
+#btn-siguiente {
+    margin-top: 8px;
+}
+
+.oculto {
+    display: none;
+}
+
+#resultado-final {
+    font-size: 20px;
+    color: #52745e;
+    font-weight: bold;
+}
+
+#lista-resultados {
+    text-align: left;
+    margin: 18px 0;
+}
+
+.resultado-item {
+    padding: 12px;
+    margin: 9px 0;
+    background-color: #f0f4f0;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.resultado-item p {
+    margin: 5px 0;
+}
+
+.correcto-texto {
+    color: #527d5d;
+}
+
+.incorrecto-texto {
+    color: #b45f5f;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 12px;
+    }
+
+    .contenedor {
+        margin: 20px auto;
+    }
+
+    .tarjeta {
+        padding: 18px 14px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}

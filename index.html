@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concurso de conocimientos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="contenedor">
+        <h1>Concurso de conocimientos</h1>
+        <p class="descripcion">Pon a prueba lo que sabes y aprende algo nuevo.</p>
+
+        <section id="pantalla-inicio" class="tarjeta">
+            <h2>¿Estás listo para comenzar?</h2>
+            <p>Responde 8 preguntas de opción múltiple. Al terminar podrás ver tu resultado.</p>
+            <button id="btn-iniciar" type="button">Comenzar concurso</button>
+        </section>
+
+        <section id="pantalla-pregunta" class="tarjeta oculto">
+            <p id="numero-pregunta">Pregunta 1 de 8</p>
+            <h2 id="texto-pregunta">Pregunta</h2>
+            <div id="opciones" class="opciones"></div>
+            <p id="retroalimentacion" role="status"></p>
+            <button id="btn-siguiente" class="oculto" type="button">Siguiente pregunta</button>
+        </section>
+
+        <section id="pantalla-final" class="tarjeta oculto">
+            <h2>¡Concurso terminado!</h2>
+            <p id="resultado-final"></p>
+            <h3>Revisión de tus respuestas</h3>
+            <div id="lista-resultados"></div>
+            <button id="btn-repetir" type="button">Volver a intentar</button>
+        </section>
+    </main>
+</body>
+</html>
